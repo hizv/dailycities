@@ -14,7 +14,7 @@ img{
 }
 
 .main {
-    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    margin-left: 200px; /* Same width as the sidebar + left position in px */
     font-size: 20px;
     padding: 0px 20px;
 }
@@ -24,7 +24,7 @@ img{
 }
 
 .sidenav {
-    width: 130px;
+    width: 190px;
     position: fixed;
     z-index: 1;
     top: 10px;
