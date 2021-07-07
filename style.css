@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Courier;
+}
+
+h1 {
+    text-align: center;
+}
+
+img{
+    width: 600px;
+    height: auto;
+}
+
+.main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.about-text{
+    padding: 5%;
+}
+
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: 20px;
+    background: white;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: blue;
+}
+
+#date{
+    color: rgb(153, 0, 0);
+    text-align: center;
+    font-weight: bold;
+}
