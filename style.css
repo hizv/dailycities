@@ -19,6 +19,14 @@ img{
     padding: 0px 20px;
 }
 
+.main a:visited {
+    color: green;
+}
+
+.main a:link {
+    color: red;
+}
+
 .about-text{
     padding: 5%;
 }
