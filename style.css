@@ -29,7 +29,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1000px) {
   .main {
     max-width: 70%;
     padding: 0px 20px;
@@ -70,7 +70,7 @@ img {
   color: blue;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .sidenav {
     width: 100%;
     height: auto;
