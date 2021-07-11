@@ -1,61 +1,76 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: Courier;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: Courier;
 }
 
-h1 {
-    text-align: center;
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-img{
-    width: 600px;
-    height: auto;
+img {
+  width: 50%;
 }
 
 .main {
-    margin-left: 200px; /* Same width as the sidebar + left position in px */
-    font-size: 20px;
-    padding: 0px 20px;
+  font-size: 20px;
+  padding: 0px 20px;
 }
 
 .main a:visited {
-    color: green;
+  color: green;
 }
 
 .main a:link {
-    color: red;
+  color: red;
 }
 
-.about-text{
-    padding: 5%;
+.about-text {
+  padding: 5%;
 }
 
 .sidenav {
-    width: 190px;
-    position: fixed;
-    z-index: 1;
-    top: 10px;
-    left: 20px;
-    background: white;
-    overflow-x: hidden;
-    padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  position: fixed;
+  z-index: 1;
+  background: white;
+  padding: 8px 0;
 }
-  
+
 .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    display: block;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
 }
 
 .sidenav a:hover {
-    color: blue;
+  color: blue;
+}
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenav a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
 }
 
-#date{
-    color: rgb(153, 0, 0);
-    text-align: center;
-    font-weight: bold;
+#date {
+  color: rgb(153, 0, 0);
+  text-align: center;
+  font-weight: bold;
 }
