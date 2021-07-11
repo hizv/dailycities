@@ -3,7 +3,7 @@ body {
   flex-direction: column;
   background-color: black;
   color: white;
-  font-family: Courier;
+  font-family: monospace;
 }
 
 .center {
