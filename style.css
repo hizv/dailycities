@@ -29,9 +29,11 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 700px) {
-  max-width: 70%;
-  padding: 0px 20px;
+@media screen and (min-width: 700px) {
+  .main {
+    max-width: 70%;
+    padding: 0px 20px;
+  }
 }
 
 .main a:visited {
@@ -92,4 +94,9 @@ img {
   color: rgb(153, 0, 0);
   text-align: center;
   font-weight: bold;
+}
+
+#reviews {
+  max-width: 100%;
+  margin: none;
 }
