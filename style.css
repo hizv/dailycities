@@ -21,9 +21,13 @@ h2 {
 }
 
 img {
-  width: 50%;
+  max-width: 70%;
 }
 
+#banner {
+  width: 54%;
+  margin: 0 auto;
+}
 .main {
   font-size: 1.2em;
   margin: 0 auto;
@@ -81,7 +85,7 @@ img {
     float: left;
   }
 
-  div.content {
+  .content {
     margin-left: 0;
   }
 
