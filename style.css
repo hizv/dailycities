@@ -295,9 +295,9 @@ figure {
 
 .square-box {
   position: relative;
-  width: 50%;
-  overflow: hidden;
-  background: #b4d5fe;
+  width: 35%;
+  overflow: auto;
+  background: #d0e6f8;
 }
 .square-box:before {
   content: "";
@@ -310,8 +310,7 @@ figure {
   left: 0;
   bottom: 0;
   right: 0;
-  color: white;
-  text-align: center;
+  color: #7cb7df;
 }
 
 .iframe-wrapper {
