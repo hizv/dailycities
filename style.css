@@ -319,6 +319,8 @@ figure {
 }
 
 .iframe-wrapper-compact {
+  margin-top: 2.5%;
+  margin-bottom: -4.0%;
   position: relative;
   height: fit-content;
   width: 100%;
