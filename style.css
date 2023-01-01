@@ -364,3 +364,10 @@ hr.content-width {
   margin: 1em 0;
   padding: 0;
 }
+
+img.big-entry{
+  max-width: 60%;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
