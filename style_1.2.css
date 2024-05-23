@@ -76,8 +76,8 @@ body {
   flex-direction: column;
   line-height: 1.5;
   padding: 4em 1em;
-  background-color: #151515;
-  color: #ddd;
+  background-color: #fcf6bd;
+  color: #151515;
   margin-left: auto;
   margin-right: auto;
   padding-left: 12.5%;
@@ -85,7 +85,7 @@ body {
 
 h2 {
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 2.1rem;
   margin-bottom: 1.4rem;
   font-size: 2.2rem;
@@ -170,6 +170,11 @@ media screen and (max-width: 1000px) img.img-cover {
 }
 
 @media screen and (max-width: 1000px) {
+  .img-cover {
+    width: 100%;
+    height: auto;
+  }
+
   img.big-entry {
     margin-left: auto;
     margin-right: auto;
@@ -225,7 +230,6 @@ body {
 }
 
 h1 {
-  font-weight: 400;
   margin-top: 4rem;
   margin-bottom: 1.5rem;
   font-size: 3.2rem;
@@ -422,7 +426,15 @@ h3 {
     "Book Antiqua", Georgia, serif !important;
 }
 
-a, input, textarea, select {
+a,
+input,
+textarea,
+select {
   font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD",
     "Book Antiqua", Georgia, serif !important;
+}
+
+.dark-mode {
+  background-color: #151515;
+  color: #ddd;
 }
