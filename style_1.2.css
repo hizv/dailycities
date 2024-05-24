@@ -250,7 +250,7 @@ hr {
   height: 0.0625em;
   width: 55%;
   border: 0;
-  border-top: 0.0625em solid #ccc;
+  border-top: 0.0625em solid #333;
   margin: 1em 0;
   padding: 0;
 }
@@ -408,7 +408,7 @@ hr.content-width {
   height: 0.0625em;
   width: 100%;
   border: 0;
-  border-top: 0.0625em solid #ccc;
+  border-top: 0.0625em solid #555;
   margin: 1em 0;
   padding: 0;
 }
@@ -437,4 +437,14 @@ select {
 .dark-mode {
   background-color: #151515;
   color: #ddd;
+}
+
+hr.content-width.dark-mode {
+  display: block;
+  height: 0.0625em;
+  width: 100%;
+  border: 0;
+  border-top: 0.0625em solid #fff;
+  margin: 1em 0;
+  padding: 0;
 }
