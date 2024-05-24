@@ -122,6 +122,12 @@ media screen and (max-width: 1000px) img.img-cover {
 }
 
 @media screen and (min-width: 1000px) {
+  #HCB_comment_box {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
   .main {
     max-width: 50%;
     padding: 0em 1.25em;
@@ -169,6 +175,13 @@ media screen and (max-width: 1000px) img.img-cover {
 }
 
 @media screen and (max-width: 1000px) {
+  #HCB_comment_box {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+
   .img-cover {
     width: 100%;
     height: auto;
@@ -414,7 +427,8 @@ hr.content-width {
 }
 
 img.hcb-icon {
-  width: 2em;
+  width: 0em;
+  visibility: hidden;
 }
 
 div.home-desc {
