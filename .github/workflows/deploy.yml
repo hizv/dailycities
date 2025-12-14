@@ -4,13 +4,28 @@ on:
     branches:
       - master
 
+concurrency: # prevent concurrent deploys doing strange things
+  group: deploy-to-neocities
+  cancel-in-progress: true
+
 jobs:
   deploy:
-    name: 'Deploy to Neocities'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: kognise/neocities-deploy-action@v1
-        with:
-          neocities_token: ${{ secrets.NEOCITIES_API_TOKEN }}
-          directory: '.'
+    - uses: actions/checkout@v4
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    - name: Install deps and build
+      run: |
+        npm i
+        npm run build
+    - name: Deploy to neocities
+      uses: bcomnes/deploy-to-neocities@v3
+      with:
+        api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
+        cleanup: false
+        neocities_supporter: false # set this to true if you have a supporter account and want to bypass unsuported files filter.
+        preview_before_deploy: true # print a deployment plan prior to waiting for files to upload.
+        dist_dir: '.'
